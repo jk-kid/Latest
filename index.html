@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Table</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #e0e7ff; /* Soft blue backdrop */
+                color: #333;
+            }
+
+            header {
+                text-align: center;
+                padding: 20px;
+                background-color: #1e3a8a; /* Dark blue header */
+                color: #fff;
+                font-size: 28px;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            table {
+                width: 90%;
+                margin: 30px auto;
+                border-collapse: separate;
+                border-spacing: 0;
+                background-color: #f9fafb; /* White table background */
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+                overflow: hidden;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 20px;
+                text-align: center;
+                vertical-align: middle;
+                background-color: #fff; /* White cells */
+            }
+
+            th {
+                background-color: #3b82f6; /* Lighter blue for header cells */
+                color: #fff;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+
+            td {
+                font-size: 16px;
+                height: 300px;
+            }
+
+            video, iframe, audio {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            @media (max-width: 768px) {
+                td {
+                    height: 200px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                table {
+                    width: 95%;
+                }
+
+                td {
+                    height: 150px;
+                    padding: 15px;
+                }
+
+                header {
+                    font-size: 24px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>MEDIA TABLE</header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Offline</th>
+                    <th>Online</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <video controls>
+                            <source src="/Users/gopalias/Downloads/FPV DRONE.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                    <td>
+                        <iframe src="https://www.youtube.com/embed/0kNwUIP85a8?si=tjAAAz4a89ishn-h" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="/Users/gopalias/Downloads/videoplayback.webm" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Ravsw8TmHN5wBiYPPYUFw?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
